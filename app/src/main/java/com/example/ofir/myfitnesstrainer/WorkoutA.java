@@ -32,7 +32,7 @@ public class WorkoutA extends AppCompatActivity {
 
     String[] devicesNameArr = {"פולי עליון", "משיכה לחזה", "גב תחתון", "חזה (דחיקה)", "חזה (פרפר" +
             " ישיבה)", "חזה שיפוע חיובי", "חזה שיפוע שלילי", "יד אחורית (חוט)", "יד אחורית " +
-            "(משקולת)"};
+            "(משקולת)", "כתף קדמית (מכשיר)"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
