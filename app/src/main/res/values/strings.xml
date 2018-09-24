@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Fitness Trainer</string>
+    <string name="workout_a">Workout A</string>
+    <string name="workout_b">Workout B</string>
+    <string name="start_tempo">Start Tempo</string>
+    <string name="weight">משקל</string>
+    <string name="device">מכשיר</string>
+    <string name="device_name">שם מכשיר</string>
+    <string name="choose_device">בחר מכשיר</string>
+    <string name="save_data">Save Data</string>
+</resources>

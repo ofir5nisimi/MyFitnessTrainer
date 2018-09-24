@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".WorkoutA">
+
+    <TextView
+        android:id="@+id/tv_device"
+        android:layout_width="235dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:text="@string/device"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_weight"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_weight"
+        android:layout_width="102dp"
+        android:layout_height="35dp"
+        android:layout_alignBaseline="@id/tv_device"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:text="@string/weight"
+        app:layout_constraintEnd_toStartOf="@+id/tv_device"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_weight_1"
+        android:layout_width="102dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_weight"
+        android:digits="0123456789."
+        android:hint="@string/weight"
+        android:inputType="number"
+        android:maxLines="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_weight" />
+
+    <EditText
+        android:id="@+id/et_weight_2"
+        android:layout_width="102dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/tv_weight"
+        android:layout_alignStart="@+id/tv_weight"
+        android:layout_below="@+id/et_weight_1"
+        android:digits="0123456789."
+        android:hint="@string/weight"
+        android:inputType="number"
+        android:maxLines="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_weight" />
+
+    <EditText
+        android:id="@+id/et_weight_3"
+        android:layout_width="102dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/tv_weight"
+        android:layout_alignStart="@+id/tv_weight"
+        android:layout_below="@+id/et_weight_2"
+        android:digits="0123456789."
+        android:hint="@string/weight"
+        android:inputType="number"
+        android:maxLines="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_weight" />
+
+    <EditText
+        android:id="@+id/et_weight_4"
+        android:layout_width="102dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/tv_weight"
+        android:layout_alignStart="@+id/tv_weight"
+        android:layout_below="@+id/et_weight_3"
+        android:digits="0123456789."
+        android:hint="@string/weight"
+        android:inputType="number"
+        android:maxLines="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_weight" />
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/drop_list_1"
+        android:layout_width="235dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/tv_device"
+        android:layout_alignStart="@+id/tv_device"
+        android:layout_below="@+id/tv_device"
+        android:hint="@string/choose_device"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_device" />
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/drop_list_2"
+        android:layout_width="235dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/tv_device"
+        android:layout_alignStart="@+id/tv_device"
+        android:layout_below="@+id/drop_list_1"
+        android:hint="@string/choose_device"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_device" />
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/drop_list_3"
+        android:layout_width="235dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/tv_device"
+        android:layout_alignStart="@+id/tv_device"
+        android:layout_below="@+id/drop_list_2"
+        android:hint="@string/choose_device"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_device" />
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/drop_list_4"
+        android:layout_width="235dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/drop_list_3"
+        android:layout_alignStart="@+id/drop_list_3"
+        android:layout_below="@+id/drop_list_3"
+        android:hint="@string/choose_device"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_device" />
+
+    <Button
+        android:id="@+id/b_start_tempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/start_tempo"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/b_save_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:onClick="clickHandlerSaveData"
+        android:text="@string/save_data"
+        android:textAllCaps="false" />
+
+</RelativeLayout>
