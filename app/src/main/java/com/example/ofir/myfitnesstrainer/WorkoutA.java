@@ -52,14 +52,16 @@ public class WorkoutA extends AppCompatActivity {
 
     EditText etWeight1, etWeight2, etWeight3, etWeight4, etWeight5, etWeight6, etWeight7;
 
-    MaterialBetterSpinner betterSpinner1, betterSpinner2, betterSpinner3, betterSpinner4, betterSpinner5, betterSpinner6, betterSpinner7;
+    MaterialBetterSpinner betterSpinner1, betterSpinner2, betterSpinner3, betterSpinner4,
+            betterSpinner5, betterSpinner6, betterSpinner7;
 
     Button bStartTempo;
     public boolean tempoOn = false;
 
-    String[] devicesNameArr = {"פולי עליון", "משיכה לחזה", "גב תחתון", "חזה (דחיקה)", "חזה (פרפר" +
-            " ישיבה)", "חזה שיפוע חיובי", "חזה שיפוע שלילי", "יד אחורית (חוט)", "יד אחורית " +
-            "(משקולת)", "כתף קדמית (מכשיר)", ""};
+    String[] devicesNameArr = {"Chest Press", "Pectoral Fly", "Shoulder Press", "Triceps Press",
+            "Biceps Curl", "Biceps Curl (Opposite)", "Biceps Side curl", "Pulldown", "Row",
+            "Lower Back Ups", "Triceps Pulls", "Triceps press", "Seated Leg Press", "Leg " +
+            "Extension", "Seated Leg Curl", ""};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -205,14 +207,15 @@ public class WorkoutA extends AppCompatActivity {
 
     public void clickHandlerStartTempo(View view) {
         if (!tempoOn) {
-            Toast toast = Toast.makeText(getApplicationContext(), "Start Tempo!", Toast.LENGTH_SHORT);
+            Toast toast = Toast.makeText(getApplicationContext(), "Start Tempo!", Toast
+                    .LENGTH_SHORT);
             toast.show();
             tempoOn = true;
             final Handler handler = new Handler();
             final int delay = 1000; //milliseconds
 
-            handler.postDelayed(new Runnable(){
-                public void run(){
+            handler.postDelayed(new Runnable() {
+                public void run() {
                     if (tempoOn) {
                         playSound(0);
                         SystemClock.sleep(1000);
@@ -228,7 +231,8 @@ public class WorkoutA extends AppCompatActivity {
                 }
             }, delay);
         } else {
-            Toast toast = Toast.makeText(getApplicationContext(), "Stop Tempo!", Toast.LENGTH_SHORT);
+            Toast toast = Toast.makeText(getApplicationContext(), "Stop Tempo!", Toast
+                    .LENGTH_SHORT);
             toast.show();
             tempoOn = false;
         }
