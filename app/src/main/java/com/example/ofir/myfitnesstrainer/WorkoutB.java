@@ -25,10 +25,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class WorkoutA extends AppCompatActivity {
+public class WorkoutB extends AppCompatActivity {
 
-    private static final String TAG = "WorkoutA";
-    private static final String MY_PREFS = "my_prefs";
+    private static final String TAG = "WorkoutB";
+    private static final String MY_PREFS = "my_prefs_b";
 
     private static final String WEIGHT1 = "WEIGHT1";
     private static final String WEIGHT2 = "WEIGHT2";
@@ -58,8 +58,8 @@ public class WorkoutA extends AppCompatActivity {
     private SoundPool sounds;
     List<Integer> soundIds = new ArrayList<>();
 
-    EditText etWeight1, etWeight2, etWeight3, etWeight4, etWeight5, etWeight6, etWeight7, etWeight8,
-            etWeight9, etWeight10;
+    EditText etWeight1, etWeight2, etWeight3, etWeight4, etWeight5, etWeight6, etWeight7,
+            etWeight8, etWeight9, etWeight10;
 
     MaterialBetterSpinner betterSpinner1, betterSpinner2, betterSpinner3, betterSpinner4,
             betterSpinner5, betterSpinner6, betterSpinner7, betterSpinner8, betterSpinner9,
@@ -77,51 +77,51 @@ public class WorkoutA extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_workout_a);
+        setContentView(R.layout.activity_workout_b);
 
-        etWeight1 = (EditText) findViewById(R.id.et_weight_1);
-        etWeight2 = (EditText) findViewById(R.id.et_weight_2);
-        etWeight3 = (EditText) findViewById(R.id.et_weight_3);
-        etWeight4 = (EditText) findViewById(R.id.et_weight_4);
-        etWeight5 = (EditText) findViewById(R.id.et_weight_5);
-        etWeight6 = (EditText) findViewById(R.id.et_weight_6);
-        etWeight7 = (EditText) findViewById(R.id.et_weight_7);
-        etWeight8 = (EditText) findViewById(R.id.et_weight_8);
-        etWeight9 = (EditText) findViewById(R.id.et_weight_9);
-        etWeight10 = (EditText) findViewById(R.id.et_weight_10);
+        etWeight1 = (EditText) findViewById(R.id.et_weight_1_b);
+        etWeight2 = (EditText) findViewById(R.id.et_weight_2_b);
+        etWeight3 = (EditText) findViewById(R.id.et_weight_3_b);
+        etWeight4 = (EditText) findViewById(R.id.et_weight_4_b);
+        etWeight5 = (EditText) findViewById(R.id.et_weight_5_b);
+        etWeight6 = (EditText) findViewById(R.id.et_weight_6_b);
+        etWeight7 = (EditText) findViewById(R.id.et_weight_7_b);
+        etWeight8 = (EditText) findViewById(R.id.et_weight_8_b);
+        etWeight9 = (EditText) findViewById(R.id.et_weight_9_b);
+        etWeight10 = (EditText) findViewById(R.id.et_weight_10_b);
 
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout
                 .simple_dropdown_item_1line, devicesNameArr);
 
         betterSpinner1 = (MaterialBetterSpinner)
-                findViewById(R.id.drop_list_1);
+                findViewById(R.id.drop_list_1_b);
 
         betterSpinner2 = (MaterialBetterSpinner)
-                findViewById(R.id.drop_list_2);
+                findViewById(R.id.drop_list_2_b);
 
         betterSpinner3 = (MaterialBetterSpinner)
-                findViewById(R.id.drop_list_3);
+                findViewById(R.id.drop_list_3_b);
 
         betterSpinner4 = (MaterialBetterSpinner)
-                findViewById(R.id.drop_list_4);
+                findViewById(R.id.drop_list_4_b);
 
         betterSpinner5 = (MaterialBetterSpinner)
-                findViewById(R.id.drop_list_5);
+                findViewById(R.id.drop_list_5_b);
 
         betterSpinner6 = (MaterialBetterSpinner)
-                findViewById(R.id.drop_list_6);
+                findViewById(R.id.drop_list_6_b);
 
         betterSpinner7 = (MaterialBetterSpinner)
-                findViewById(R.id.drop_list_7);
+                findViewById(R.id.drop_list_7_b);
 
         betterSpinner8 = (MaterialBetterSpinner)
-                findViewById(R.id.drop_list_8);
+                findViewById(R.id.drop_list_8_b);
 
         betterSpinner9 = (MaterialBetterSpinner)
-                findViewById(R.id.drop_list_9);
+                findViewById(R.id.drop_list_9_b);
 
         betterSpinner10 = (MaterialBetterSpinner)
-                findViewById(R.id.drop_list_10);
+                findViewById(R.id.drop_list_10_b);
 
         betterSpinner1.setAdapter(arrayAdapter);
         betterSpinner2.setAdapter(arrayAdapter);
@@ -195,7 +195,7 @@ public class WorkoutA extends AppCompatActivity {
         sounds.play(soundIds.get(fileNumber), 1f, 1f, 1, 0, 1);
     }
 
-    public void clickHandlerSaveData(View view) {
+    public void clickHandlerSaveDataB(View view) {
         String wieght1Str = etWeight1.getText().toString();
         String wieght2Str = etWeight2.getText().toString();
         String wieght3Str = etWeight3.getText().toString();
@@ -305,7 +305,7 @@ public class WorkoutA extends AppCompatActivity {
         thread.start();
     }
 
-    public void clickHandlerStartTempo(final View view) {
+    public void clickHandlerStartTempoB(final View view) {
         if (!tempoOn) {
             Toast toast = Toast.makeText(getApplicationContext(), "Start Tempo!", Toast
                     .LENGTH_SHORT);
@@ -329,5 +329,6 @@ public class WorkoutA extends AppCompatActivity {
             toast.show();
             tempoOn = false;
         }
+
     }
 }

@@ -21,4 +21,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this, WorkoutA.class));
     }
 
+    public void clickHandlerWorkoutB(View view) {
+        startActivity(new Intent(MainActivity.this, WorkoutB.class));
+    }
 }

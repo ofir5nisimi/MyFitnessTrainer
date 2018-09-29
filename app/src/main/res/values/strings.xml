@@ -8,4 +8,6 @@
     <string name="device_name">שם מכשיר</string>
     <string name="choose_device">בחר מכשיר</string>
     <string name="save_data">Save Data</string>
+    <string name="a_header">A</string>
+    <string name="b_header">B</string>
 </resources>

@@ -8,17 +8,15 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    tools:context=".WorkoutA">
+    tools:context=".WorkoutB">
 
     <TextView
-        android:id="@+id/tv_device"
+        android:id="@+id/tv_device_b"
         android:layout_width="150dp"
         android:layout_height="35dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         android:gravity="center_horizontal"
         android:text="@string/device"
@@ -26,35 +24,33 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/tv_a"
+        app:layout_constraintStart_toEndOf="@+id/tv_b"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tv_a"
+        android:id="@+id/tv_b"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="A"
+        android:text="B"
         android:textColor="@android:color/black"
         android:textSize="30sp"
         android:textStyle="bold"
         app:fontFamily="cursive"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_device"
-        app:layout_constraintEnd_toStartOf="@+id/tv_device"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_device_b"
+        app:layout_constraintEnd_toStartOf="@+id/tv_device_b"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/tv_weight"
+        app:layout_constraintStart_toEndOf="@+id/tv_weight_b"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tv_weight"
+        android:id="@+id/tv_weight_b"
         android:layout_width="102dp"
         android:layout_height="35dp"
-        android:layout_alignBaseline="@id/tv_device"
+        android:layout_alignBaseline="@id/tv_device_b"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
@@ -65,7 +61,7 @@
         android:text="@string/weight"
         android:textColor="@android:color/black"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/tv_a"
+        app:layout_constraintEnd_toStartOf="@+id/tv_b"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toStartOf="parent"
@@ -76,11 +72,11 @@
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/b_save_data"
+        app:layout_constraintBottom_toTopOf="@+id/b_save_data_b"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_device">
+        app:layout_constraintTop_toBottomOf="@+id/tv_device_b">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -88,10 +84,10 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/et_weight_1"
+                android:id="@+id/et_weight_1_b"
                 android:layout_width="102dp"
                 android:layout_height="50dp"
-                android:layout_below="@+id/et_weight_4"
+                android:layout_below="@+id/et_weight_4_b"
                 android:layout_marginLeft="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
@@ -99,14 +95,14 @@
                 android:hint="@string/weight"
                 android:inputType="number"
                 android:maxLines="1"
-                app:layout_constraintEnd_toStartOf="@+id/drop_list_1"
+                app:layout_constraintEnd_toStartOf="@+id/drop_list_1_b"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintHorizontal_chainStyle="spread_inside"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/et_weight_2"
+                android:id="@+id/et_weight_2_b"
                 android:layout_width="102dp"
                 android:layout_height="50dp"
                 android:layout_alignParentLeft="true"
@@ -118,17 +114,17 @@
                 android:hint="@string/weight"
                 android:inputType="number"
                 android:maxLines="1"
-                app:layout_constraintEnd_toStartOf="@+id/drop_list_2"
+                app:layout_constraintEnd_toStartOf="@+id/drop_list_2_b"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintHorizontal_chainStyle="spread_inside"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/et_weight_1" />
+                app:layout_constraintTop_toBottomOf="@+id/et_weight_1_b" />
 
             <EditText
-                android:id="@+id/et_weight_3"
+                android:id="@+id/et_weight_3_b"
                 android:layout_width="102dp"
                 android:layout_height="50dp"
-                android:layout_below="@+id/et_weight_2"
+                android:layout_below="@+id/et_weight_2_b"
                 android:layout_marginLeft="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
@@ -136,17 +132,17 @@
                 android:hint="@string/weight"
                 android:inputType="number"
                 android:maxLines="1"
-                app:layout_constraintEnd_toStartOf="@+id/drop_list_3"
+                app:layout_constraintEnd_toStartOf="@+id/drop_list_3_b"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintHorizontal_chainStyle="spread_inside"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/et_weight_2" />
+                app:layout_constraintTop_toBottomOf="@+id/et_weight_2_b" />
 
             <EditText
-                android:id="@+id/et_weight_4"
+                android:id="@+id/et_weight_4_b"
                 android:layout_width="102dp"
                 android:layout_height="50dp"
-                android:layout_below="@+id/et_weight_3"
+                android:layout_below="@+id/et_weight_3_b"
                 android:layout_marginLeft="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
@@ -154,17 +150,17 @@
                 android:hint="@string/weight"
                 android:inputType="number"
                 android:maxLines="1"
-                app:layout_constraintEnd_toStartOf="@+id/drop_list_4"
+                app:layout_constraintEnd_toStartOf="@+id/drop_list_4_b"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintHorizontal_chainStyle="spread_inside"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/et_weight_3" />
+                app:layout_constraintTop_toBottomOf="@+id/et_weight_3_b" />
 
             <EditText
-                android:id="@+id/et_weight_5"
+                android:id="@+id/et_weight_5_b"
                 android:layout_width="102dp"
                 android:layout_height="50dp"
-                android:layout_below="@+id/et_weight_3"
+                android:layout_below="@+id/et_weight_3_b"
                 android:layout_marginLeft="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
@@ -172,17 +168,17 @@
                 android:hint="@string/weight"
                 android:inputType="number"
                 android:maxLines="1"
-                app:layout_constraintEnd_toStartOf="@+id/drop_list_5"
+                app:layout_constraintEnd_toStartOf="@+id/drop_list_5_b"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintHorizontal_chainStyle="spread_inside"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/et_weight_4" />
+                app:layout_constraintTop_toBottomOf="@+id/et_weight_4_b" />
 
             <EditText
-                android:id="@+id/et_weight_6"
+                android:id="@+id/et_weight_6_b"
                 android:layout_width="102dp"
                 android:layout_height="50dp"
-                android:layout_below="@+id/et_weight_3"
+                android:layout_below="@+id/et_weight_3_b"
                 android:layout_marginLeft="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
@@ -190,17 +186,17 @@
                 android:hint="@string/weight"
                 android:inputType="number"
                 android:maxLines="1"
-                app:layout_constraintEnd_toStartOf="@+id/drop_list_6"
+                app:layout_constraintEnd_toStartOf="@+id/drop_list_6_b"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintHorizontal_chainStyle="spread_inside"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/et_weight_5" />
+                app:layout_constraintTop_toBottomOf="@+id/et_weight_5_b" />
 
             <EditText
-                android:id="@+id/et_weight_7"
+                android:id="@+id/et_weight_7_b"
                 android:layout_width="102dp"
                 android:layout_height="50dp"
-                android:layout_below="@+id/et_weight_3"
+                android:layout_below="@+id/et_weight_3_b"
                 android:layout_marginLeft="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
@@ -208,17 +204,17 @@
                 android:hint="@string/weight"
                 android:inputType="number"
                 android:maxLines="1"
-                app:layout_constraintEnd_toStartOf="@+id/drop_list_7"
+                app:layout_constraintEnd_toStartOf="@+id/drop_list_7_b"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintHorizontal_chainStyle="spread_inside"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/et_weight_6" />
+                app:layout_constraintTop_toBottomOf="@+id/et_weight_6_b" />
 
             <EditText
-                android:id="@+id/et_weight_8"
+                android:id="@+id/et_weight_8_b"
                 android:layout_width="102dp"
                 android:layout_height="50dp"
-                android:layout_below="@+id/et_weight_3"
+                android:layout_below="@+id/et_weight_3_b"
                 android:layout_marginLeft="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
@@ -226,17 +222,17 @@
                 android:hint="@string/weight"
                 android:inputType="number"
                 android:maxLines="1"
-                app:layout_constraintEnd_toStartOf="@+id/drop_list_8"
+                app:layout_constraintEnd_toStartOf="@+id/drop_list_8_b"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintHorizontal_chainStyle="spread_inside"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/et_weight_7" />
+                app:layout_constraintTop_toBottomOf="@+id/et_weight_7_b" />
 
             <EditText
-                android:id="@+id/et_weight_9"
+                android:id="@+id/et_weight_9_b"
                 android:layout_width="102dp"
                 android:layout_height="50dp"
-                android:layout_below="@+id/et_weight_3"
+                android:layout_below="@+id/et_weight_3_b"
                 android:layout_marginLeft="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
@@ -244,17 +240,17 @@
                 android:hint="@string/weight"
                 android:inputType="number"
                 android:maxLines="1"
-                app:layout_constraintEnd_toStartOf="@+id/drop_list_9"
+                app:layout_constraintEnd_toStartOf="@+id/drop_list_9_b"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintHorizontal_chainStyle="spread_inside"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/et_weight_8" />
+                app:layout_constraintTop_toBottomOf="@+id/et_weight_8_b" />
 
             <EditText
-                android:id="@+id/et_weight_10"
+                android:id="@+id/et_weight_10_b"
                 android:layout_width="102dp"
                 android:layout_height="50dp"
-                android:layout_below="@+id/et_weight_3"
+                android:layout_below="@+id/et_weight_3_b"
                 android:layout_marginLeft="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
@@ -262,14 +258,15 @@
                 android:hint="@string/weight"
                 android:inputType="number"
                 android:maxLines="1"
-                app:layout_constraintEnd_toStartOf="@+id/drop_list_10"
+                app:layout_constraintEnd_toStartOf="@+id/drop_list_10_b"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintHorizontal_chainStyle="spread_inside"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/et_weight_9" />
+                app:layout_constraintTop_toBottomOf="@+id/et_weight_9_b" />
+
 
             <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-                android:id="@+id/drop_list_1"
+                android:id="@+id/drop_list_1_b"
                 android:layout_width="210dp"
                 android:layout_height="50dp"
                 android:layout_marginEnd="8dp"
@@ -278,11 +275,11 @@
                 android:hint="@string/choose_device"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/et_weight_1"
+                app:layout_constraintStart_toEndOf="@+id/et_weight_1_b"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-                android:id="@+id/drop_list_3"
+                android:id="@+id/drop_list_3_b"
                 android:layout_width="210dp"
                 android:layout_height="50dp"
                 android:layout_marginEnd="8dp"
@@ -291,14 +288,14 @@
                 android:hint="@string/choose_device"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/et_weight_3"
-                app:layout_constraintTop_toBottomOf="@+id/drop_list_2" />
+                app:layout_constraintStart_toEndOf="@+id/et_weight_3_b"
+                app:layout_constraintTop_toBottomOf="@+id/drop_list_2_b" />
 
             <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-                android:id="@+id/drop_list_2"
+                android:id="@+id/drop_list_2_b"
                 android:layout_width="210dp"
                 android:layout_height="50dp"
-                android:layout_below="@+id/drop_list_3"
+                android:layout_below="@+id/drop_list_3_b"
                 android:layout_marginEnd="8dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
@@ -307,113 +304,113 @@
                 android:hint="@string/choose_device"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/et_weight_2"
-                app:layout_constraintTop_toBottomOf="@+id/drop_list_1" />
+                app:layout_constraintStart_toEndOf="@+id/et_weight_2_b"
+                app:layout_constraintTop_toBottomOf="@+id/drop_list_1_b" />
 
             <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-                android:id="@+id/drop_list_4"
+                android:id="@+id/drop_list_4_b"
                 android:layout_width="210dp"
                 android:layout_height="50dp"
-                android:layout_below="@+id/drop_list_2"
+                android:layout_below="@+id/drop_list_2_b"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginTop="8dp"
                 android:hint="@string/choose_device"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/et_weight_4"
-                app:layout_constraintTop_toBottomOf="@+id/drop_list_3" />
+                app:layout_constraintStart_toEndOf="@+id/et_weight_4_b"
+                app:layout_constraintTop_toBottomOf="@+id/drop_list_3_b" />
 
             <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-                android:id="@+id/drop_list_5"
+                android:id="@+id/drop_list_5_b"
                 android:layout_width="210dp"
                 android:layout_height="50dp"
-                android:layout_below="@+id/drop_list_2"
+                android:layout_below="@+id/drop_list_2_b"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginTop="8dp"
                 android:hint="@string/choose_device"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/et_weight_5"
-                app:layout_constraintTop_toBottomOf="@+id/drop_list_4" />
+                app:layout_constraintStart_toEndOf="@+id/et_weight_5_b"
+                app:layout_constraintTop_toBottomOf="@+id/drop_list_4_b" />
 
             <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-                android:id="@+id/drop_list_6"
+                android:id="@+id/drop_list_6_b"
                 android:layout_width="210dp"
                 android:layout_height="50dp"
-                android:layout_below="@+id/drop_list_2"
+                android:layout_below="@+id/drop_list_2_b"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginTop="8dp"
                 android:hint="@string/choose_device"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/et_weight_6"
-                app:layout_constraintTop_toBottomOf="@+id/drop_list_5" />
+                app:layout_constraintStart_toEndOf="@+id/et_weight_6_b"
+                app:layout_constraintTop_toBottomOf="@+id/drop_list_5_b" />
 
             <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-                android:id="@+id/drop_list_7"
+                android:id="@+id/drop_list_7_b"
                 android:layout_width="210dp"
                 android:layout_height="50dp"
-                android:layout_below="@+id/drop_list_2"
+                android:layout_below="@+id/drop_list_2_b"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginTop="8dp"
                 android:hint="@string/choose_device"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/et_weight_7"
-                app:layout_constraintTop_toBottomOf="@+id/drop_list_6" />
+                app:layout_constraintStart_toEndOf="@+id/et_weight_7_b"
+                app:layout_constraintTop_toBottomOf="@+id/drop_list_6_b" />
 
             <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-                android:id="@+id/drop_list_8"
+                android:id="@+id/drop_list_8_b"
                 android:layout_width="210dp"
                 android:layout_height="50dp"
-                android:layout_below="@+id/drop_list_2"
+                android:layout_below="@+id/drop_list_2_b"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginTop="8dp"
                 android:hint="@string/choose_device"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/et_weight_8"
-                app:layout_constraintTop_toBottomOf="@+id/drop_list_7" />
+                app:layout_constraintStart_toEndOf="@+id/et_weight_8_b"
+                app:layout_constraintTop_toBottomOf="@+id/drop_list_7_b" />
 
             <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-                android:id="@+id/drop_list_9"
+                android:id="@+id/drop_list_9_b"
                 android:layout_width="210dp"
                 android:layout_height="50dp"
-                android:layout_below="@+id/drop_list_2"
+                android:layout_below="@+id/drop_list_2_b"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginTop="8dp"
                 android:hint="@string/choose_device"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/et_weight_9"
-                app:layout_constraintTop_toBottomOf="@+id/drop_list_8" />
+                app:layout_constraintStart_toEndOf="@+id/et_weight_9_b"
+                app:layout_constraintTop_toBottomOf="@+id/drop_list_8_b" />
 
             <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-                android:id="@+id/drop_list_10"
+                android:id="@+id/drop_list_10_b"
                 android:layout_width="210dp"
                 android:layout_height="50dp"
-                android:layout_below="@+id/drop_list_2"
+                android:layout_below="@+id/drop_list_2_b"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginTop="8dp"
                 android:hint="@string/choose_device"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/et_weight_10"
-                app:layout_constraintTop_toBottomOf="@+id/drop_list_9" />
+                app:layout_constraintStart_toEndOf="@+id/et_weight_10_b"
+                app:layout_constraintTop_toBottomOf="@+id/drop_list_9_b" />
+
 
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
 
-
     <Button
-        android:id="@+id/b_start_tempo"
+        android:id="@+id/b_start_tempo_b"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -422,14 +419,14 @@
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
-        android:onClick="clickHandlerStartTempo"
+        android:onClick="clickHandlerStartTempoB"
         android:text="@string/start_stop_tempo"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/b_save_data"
+        android:id="@+id/b_save_data_b"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -438,7 +435,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:onClick="clickHandlerSaveData"
+        android:onClick="clickHandlerSaveDataB"
         android:text="@string/save_data"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
