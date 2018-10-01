@@ -134,7 +134,7 @@ public class WorkoutB extends AppCompatActivity {
         betterSpinner9.setAdapter(arrayAdapter);
         betterSpinner10.setAdapter(arrayAdapter);
 
-        bStartTempo = (Button) findViewById(R.id.b_start_tempo);
+        bStartTempo = (Button) findViewById(R.id.b_start_tempo_b);
 
         SharedPreferences pref = getApplicationContext().getSharedPreferences(MY_PREFS,
                 MODE_PRIVATE);
