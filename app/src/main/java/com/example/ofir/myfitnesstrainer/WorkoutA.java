@@ -70,9 +70,9 @@ public class WorkoutA extends AppCompatActivity {
 
     String[] devicesNameArr = {"Chest Press", "Pectoral Fly", "Chest Press Pos", "Chest Press Neg",
             "Shoulder Press", "Triceps Press", "Shoulder Dumbbell", "Biceps Curl", "Biceps Curl " +
-            "Rev", "Biceps Side curl", "Pulldown", "Row", "Lower Back Ups", "Triceps Pulls",
-            "Triceps press", "Seated Leg Press", "Leg Extension", "Seated Leg Curl", "Abs (Machine)",
-            ""};
+            "Rev", "Biceps Side Curl", "Pulldown", "Row", "Rear Deltoid", "Lower Back Ups",
+            "Triceps Pulls", "Triceps press", "Seated Leg Press", "Leg Extension", "Seated Leg " +
+            "Curl", "Abs Machine)", "Brachioradialis", ""};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
